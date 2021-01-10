@@ -21,11 +21,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 //SQL DATABASE SETUP----------------------------------------------------------------------------------------------
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'user_management_system'
-    
+    host: 'sql12.freesqldatabase.com',
+    user: 'sql12386181',
+    password: 'XYDsuRg2vi',
+    database: 'sql12386181'
+
 });
 
 db.connect((err) =>{
