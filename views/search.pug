@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../public/css/search.css")
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        title Search User
+    body
+        div.header 
+            h1.title User Management System
+            a(href="/" class='btn') Home Page
+        
+        div.content
+            div.searchTitle
+                p Search !
+            form(action="/search", method="post")
+                input(type="number" placeholder='10-Digit Mobile Number' name='mobile' required)
+                button 
+                    img(src="https://img.icons8.com/ios-filled/50/000000/search--v2.png/", alt="alt")
+                    p Search

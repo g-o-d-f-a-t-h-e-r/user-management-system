@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../public/css/register.css")
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        title Registration
+    body
+        div.header 
+            h1 New User Registration
+            a(href="/" class='btn') Home Page
+
+        div.content
+            div.container   
+                h2 Enter Your Details 
+                br
+                form(action="/submit", method="post" enctype='multipart/form-data' )
+                    div.isec.name
+                        input(type="text" placeholder='John Doe' name='name' required)
+                    div.isec.number
+                        input(type="tel" placeholder='10-Digit Mobile Number' name='number'  required)
+                    div.isec.address
+                        input(type="text" placeholder='Address Line 1' name='addressl1' required)
+                        input(type="text" placeholder='Address Line 2' name='addressl2' required)
+                        input(type="text" placeholder='City' name='city' required)
+                        input(type="text" placeholder='State' name='state' required)
+                        input(type="number" placeholder='Pin Code' name='pin' required)
+                    div.isec.aadhar
+                        input(type="number" placeholder='Aadhar Number' name='aadharNo' required)
+                        div.flex
+                            h3 Aadhar Card Front  
+                            input(type="file" name='aadharFront' required accept='image/*')
+                        div.flex
+                            h3 Aadhar Card Back  
+                            input(type='file' name='aadharBack' required accept='image/*')
+                    div.isec.driving
+                        input(type="text" name='drivingNumber' placeholder='Driving Liscence Number' required)
+                        div.flex
+                            h3 Driving Licence Image  
+                            input(type="file" name='driving' required accept='image/*')
+                        input(type="date" name='drivingExpiry' placeholder='Driving Licence Expiry Date' required)
+                    button.button Submit
+
+                        

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../public/css/display.css")
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        title Welcome #{name} !!!
+    body
+        div.header
+            h1 User Management System
+
+        div.content
+            div.container
+                div.head Details of #[span(style='color: rgb(0, 122, 78); text-transform: uppercase;') #{name}]
+                div.aadharimg
+                    div.af
+                        img(src='../public/uploads/' + aadharFront, alt="Aadhar Front")
+                        p Aadhar Card Front
+                    div.ab
+                        img(src='../public/uploads/' + aadharBack, alt="Aadhar Back")
+                        p Aadhar card Back
+                div.details
+                    p Name : #[span(class='field') #{name}]
+                    p Mobile Number : #[span(class='field') #{mobile}]
+                    p Address Line 1 : #[span(class='field') #{addressl1}]
+                    p Address Line 2 : #[span(class='field') #{addressl2}]
+                    p City : #[span(class='field') #{city}]
+                    p State : #[span(class='field') #{state}]
+                    p Pin Code : #[span(class='field') #{pin}]
+                    p Aadhar Number : #[span(class='field') #{aadharNo}]
+                    p Driving Licence Number : #[span(class='field') #{drivingNumber}]
+                    div.driving
+                        div.d1
+                            p Driving Licence Image : 
+                        div.d2 
+                            img(src='../public/uploads/' + driving, alt="Driving Liscence")
+                    p Driving Licence Expiry Date : #[span(class='field') #{drivingExpiry}]
+                
+            a(href="/" class='home') Return Home

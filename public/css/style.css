@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 3px;
+}
+
+.content{
+    display: flex;
+}
+
+.newUser, .searchUser{
+    display: block;
+    /* border: 1px solid black; */
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    
+    
+}
+
+
+.newUser img, .searchUser img{
+
+    width: 30%;
+    margin-bottom: 70px;
+}
+
+.newUser a{
+    background-color: aquamarine;
+    padding: 10px 32px;
+}
+
+.searchUser a{
+    background-color: aquamarine;
+    padding: 10px 80px;
+}
+
+.btn:hover{
+    transition-duration: 0.3s;
+    background-color: rgb(42, 201, 148);
+}
+
+.btn{
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+    
+}
+
+.bg{
+    background-color: aquamarine;
+    width: 30%;
+    margin:auto;
+    padding: 15px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+.bg:hover{
+    transition-duration: 0.3s;
+    background-color: rgb(75, 224, 175);
+}
+
