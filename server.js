@@ -21,7 +21,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 //SQL DATABASE SETUP----------------------------------------------------------------------------------------------
 const db = mysql.createConnection({
-    host: 'https://u-m-s.herokuapp.com/',
+    host: 'localhost',
     user: 'root',
     password: '',
     database: 'user_management_system'
